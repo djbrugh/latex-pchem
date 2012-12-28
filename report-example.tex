@@ -1,0 +1,81 @@
+%----------------------------------------------------------------------------
+% Do Not Modify This Stuff
+%----------------------------------------------------------------------------
+\documentclass[english,letter,11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{slantsc}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\setkomafont{subsection}{\usefont{T1}{fvs}{b}{n}}
+\setkomafont{section}{\usefont{T1}{fvs}{b}{n}\large}
+\setkomafont{title}{\usefont{T1}{fvs}{b}{n}}
+\setcounter{secnumdepth}{0}
+\pagestyle{empty}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}  % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+%----------------------------------------------------------------------------
+% Enter Full Title of Report Here
+%----------------------------------------------------------------------------
+\newcommand*\doctitle{Example of Physical Chemistry Report in \LaTeX}
+%----------------------------------------------------------------------------
+% Enter Short Title of Report Here
+% This version of the title should be short enough to fit in
+% the left half of the header.
+%----------------------------------------------------------------------------
+\newcommand*\shortdoctitle{\LaTeX Report In Pchem}
+%----------------------------------------------------------------------------
+% Enter Names of Authors Here
+% If the report has more than one author, separage authors with a comma.
+%----------------------------------------------------------------------------
+\newcommand*\docauthor{Dale J. Brugh}
+%----------------------------------------------------------------------------
+% Enter Last Names of Authors
+% This list of author last names will appear on the right side of the 
+% heaader at the top of each page.
+%----------------------------------------------------------------------------
+\newcommand*\shortdocauthor{Brugh}
+%----------------------------------------------------------------------------
+% Do Not Modify This Stuff
+%----------------------------------------------------------------------------
+\date{\today}
+\title{\doctitle}
+\author{\docauthor}
+\renewcommand*{\titlepagestyle}{empty} % Removed page number on first page
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\shortdoctitle}
+\rhead{\shortdocauthor}
+\fancyfoot[CE,CO]{\thepage}
+\begin{document}
+\maketitle % Puts title, author, and date on first page.
+%----------------------------------------------------------------------------
+% Abstract
+%----------------------------------------------------------------------------
+\section{Abstract}
+This is where the absract goes. Just type the abstract without regard for the formatting. \LaTeX will handle the formatting for you. 
+%----------------------------------------------------------------------------
+% Experimental
+%----------------------------------------------------------------------------
+\section{Experimental}
+This is where the experimental material goes. 
+%----------------------------------------------------------------------------
+% Results
+%----------------------------------------------------------------------------
+\section{Results}
+This is where the results go.
+%----------------------------------------------------------------------------
+% Discussion
+%----------------------------------------------------------------------------
+\section{Discussion}
+The three dimensional Schr\"odinger equation in Cartesian coordinates is given by 
+\begin{equation}\label{eq-schrodinger}
+-\frac{\hbar^2}{2m}\left[\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\right]\psi(x,y,z) = E \psi(x,y,z)
+\end{equation}
+where $m$ is the mass of the particle and $E$ is the energy of the system. If you want to refer to Equation~\ref{eq-schrodinger} then this is how you do it. You never refer to equations by saying ``the equation above'' or ``the equation below''. You always refer to an equation by its number, and you should never handle those numbers manually. Let \LaTeX handle them automatically. 
+%----------------------------------------------------------------------------
+% Do Not Modify This Stuff
+%----------------------------------------------------------------------------
+\end{document}

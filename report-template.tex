@@ -1,0 +1,67 @@
+%----------------------------------------------------------------------------
+% Do Not Modify This Stuff
+%----------------------------------------------------------------------------
+\documentclass[english,letter,11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{slantsc}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\setkomafont{subsection}{\usefont{T1}{fvs}{b}{n}}
+\setkomafont{section}{\usefont{T1}{fvs}{b}{n}\large}
+\setkomafont{title}{\usefont{T1}{fvs}{b}{n}}
+\setcounter{secnumdepth}{0}
+\pagestyle{empty}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}  % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+%----------------------------------------------------------------------------
+% Enter Full Title of Report Here
+%----------------------------------------------------------------------------
+\newcommand*\doctitle{Full Title of Report}
+%----------------------------------------------------------------------------
+% Enter Short Title of Report Here
+% This version of the title should be short enough to fit in
+% the left half of the header.
+%----------------------------------------------------------------------------
+\newcommand*\shortdoctitle{Short Title}
+%----------------------------------------------------------------------------
+% Enter Names of Authors Here
+% If the report has more than one author, separage authors with a comma.
+%----------------------------------------------------------------------------
+\newcommand*\docauthor{Your Name Here}
+%----------------------------------------------------------------------------
+% Enter Last Names of Authors
+% This list of author last names will appear on the right side of the 
+% heaader at the top of each page.
+%----------------------------------------------------------------------------
+\newcommand*\shortdocauthor{Brugh, Lever, Lance}
+%----------------------------------------------------------------------------
+% Do Not Modify This Stuff
+%----------------------------------------------------------------------------
+\date{\today}
+\title{\doctitle}
+\author{\docauthor}
+\renewcommand*{\titlepagestyle}{empty} % Removed page number on first page
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\shortdoctitle}
+\rhead{\shortdocauthor}
+\fancyfoot[CE,CO]{\thepage}
+%----------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Abstract}
+
+\section{Introduction}
+
+\section{Experimental}
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Acknowledgements}
+
+\end{document}
