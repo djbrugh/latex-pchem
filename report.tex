@@ -48,6 +48,7 @@
 \usepackage{titlesec}   % allows modification of heading formats
 \usepackage{microtype}	% allows adjustment of letter spacing
 \usepackage{layout}
+\usepackage{graphicx}
 %----------------------------------------------------------------------------
 % Set Page Dimensions
 %----------------------------------------------------------------------------
@@ -116,32 +117,41 @@
 \maketitle
 \thispagestyle{empty}
 
-\noindent This is a single-column report without margin notes built on the \LaTeX\ memoir class. It is best typeset as a one-sided document. 
+\noindent This is a single-column report built on the \LaTeX\ memoir class. It is best typeset as a one-sided document. This document template should be used when writing reports in physical chemistry at Ohio Wesleyan University. 
 
-\section{Introduction}
-\lipsum[5]
-\section{Second Section}
-\lipsum[5]
+\section{Abstract}
+Some reports will require an abstract. You do not need to apply special formatting to the abstract. Just make it another section in your report. 
 
-Given below is the three dimensional Schr\"odinger equation in Cartesian coordinates. 
+\section{Equations}
+The three dimensional Schr\"odinger equation in Cartesian coordinates is given by
 \begin{equation}\label{eq-schrodinger}
 -\frac{\hbar^2}{2m}\left[\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\right]\psi(x,y,z) = E \psi(x,y,z)
 \end{equation}
+where $m$ is the mass of the particle and $E$ is the total energy of the particle. Note that Equation~\ref{eq-schrodinger} is an equation in display mode while $m$ and $E$ are in what is called inline math mode. This also illustrates how to reference equations. 
 
-\lipsum[5]
+\section{Tables}
+If you want to include a table in a report, this is how you should do it. Rows in a table end with a double backslash. Cells are separated with an amperstand. The material in Table~\ref{tab-illustration} is just randome stuff that has no meaning. 
+\begin{table}[h]
+\caption{This is the first table.}
+\begin{tabular}{lcr}
+\hline\hline
+Cell 1 & Cell 2 & Cell 3 \\
+Cell 4 & Cell 5 & Cell 6 \\
+Cell 7 & Cell 8 & Cell 9 \\
+\hline\hline
+\end{tabular}
+\label{tab-illustration}
+\end{table}
+You should not try to manually move a table around in your report. Instead, you should insert the table where it logically belongs and then allow \LaTeX\ to position it. \LaTeX\ will almost always make better choices than you will make. 
 
-\lipsum[4]
+If, however, you really feel like you must adjust the position of a table, you can change the h to b or t after beginning a table. 
 
-\lipsum[3]
-
-\section{Third Section}
-
-\lipsum[2]
-
-\lipsum[3]
-
-\subsection{A Subsection}
-
-\lipsum[4]
+\section{Figures}
+Figures should be included in this way. Always refer to figures and tables by number. If you want to refer to Figure~\ref{fig-boltzmann} you do so with the \LaTeX\ reference command. 
+\begin{figure}[h]
+\caption{Photograph of Boltzmann taken from Wikipedia.}
+\includegraphics[width=1.5in]{figs/Boltzmann2.jpg}
+\label{fig-boltzmann}
+\end{figure}
 %----------------------------------------------------------------------------
 \end{document}
