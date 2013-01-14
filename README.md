@@ -4,4 +4,4 @@ This repository provides LaTeX templates for use in physical chemistry at Ohio W
 
 ## Report Template
 
-The report template is currently the only template available. 
+The report template is a single-column template based on the memoir class. It is intended to be printed single sided. 
